@@ -35,7 +35,7 @@ public class LoginController {
         String id = user.getId();
         String password = user.getPassword();
         if(id==null||password==null){
-            log.info("账号或密码为null");
+            log.info("账号或密码为空");
             return "false";
         }
         if(userService.checkPwd(id,password)){
